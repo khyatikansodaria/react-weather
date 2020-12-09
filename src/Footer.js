@@ -5,7 +5,7 @@ export default function Footer() {
     <div class="container ftr">
       <h4>
         <a
-          href="https://github.com/khyatipatel1624/my-weather-app"
+          href="https://github.com/khyatipatel1624/react-weather"
           rel="noreferrer"
           target="_blank"
         >
