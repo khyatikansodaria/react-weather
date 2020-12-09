@@ -6,6 +6,7 @@ export default function Footer() {
       <h4>
         <a
           href="https://github.com/khyatipatel1624/my-weather-app"
+          rel="noreferrer"
           target="_blank"
         >
           Open-source Code
