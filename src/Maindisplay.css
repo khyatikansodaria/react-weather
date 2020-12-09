@@ -1,0 +1,13 @@
+.maincity img {
+  max-width: 30%;
+}
+
+.row {
+  justify-content: center;
+}
+
+.cityName,
+#search-engine,
+#wtype {
+  text-transform: capitalize;
+}

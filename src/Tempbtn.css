@@ -1,0 +1,15 @@
+.tempbtns .btn {
+  margin-right: 15px;
+}
+
+.btn:hover {
+  background: #369acd;
+  color: white;
+}
+.btn {
+  border: 2px solid #369acd;
+}
+
+.disabled {
+  background: #369acd !important;
+}
