@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from 'react-dom';
 import "./App.css";
 import Tempbtn from "./Tempbtn";
 import Greet from "./Greet";
