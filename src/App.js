@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
+import Container from "react-bootstrap/Container";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Tempbtn from "./Tempbtn";
 import Greet from "./Greet";
 import Maindisplay from "./Maindisplay";
 import Prediction from "./Prediction";
 import Footer from "./Footer";
-import Container from "react-bootstrap/Container";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
@@ -33,7 +33,6 @@ function App() {
         </div>
         <Greet />
         <Maindisplay />
-
         <Prediction />
       </div>
       <Footer />
