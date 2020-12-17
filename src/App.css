@@ -10,7 +10,7 @@
   justify-content: center;
 }
 
-.searchlocation {
+.App .searchlocation {
   width: auto;
 }
 
@@ -18,6 +18,11 @@
   margin: 10px 0;
 }
 
-.btn {
+.App .btn {
   border: 2px solid #369acd;
+}
+
+.App .btn:hover {
+  background: #369acd;
+  color: white;
 }

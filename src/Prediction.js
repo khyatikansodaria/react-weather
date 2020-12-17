@@ -3,9 +3,9 @@ import "./Prediction.css";
 
 export default function Prediction() {
   return (
-    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-5 text-center forecast mt-5">
-      <div class="col">
-        <div class="card">
+    <div className="row row-cols-2 row-cols-sm-2 row-cols-md-5 text-center forecast mt-5">
+      <div className="col">
+        <div className="card">
           <h4 id="pred1day">Sunday</h4>
           <img id="pred1img" src="img/sun.svg" alt="sun" />
           <h4>
@@ -14,8 +14,8 @@ export default function Prediction() {
           </h4>
         </div>
       </div>
-      <div class="col">
-        <div class="card">
+      <div className="col">
+        <div className="card">
           <h4 id="pred2day">Monday</h4>
           <img id="pred2img" src="img/partly-cloudy.svg" alt="sun" />
           <h4>
@@ -24,8 +24,8 @@ export default function Prediction() {
           </h4>
         </div>
       </div>
-      <div class="col">
-        <div class="card">
+      <div className="col">
+        <div className="card">
           <h4 id="pred3day">Tuesday</h4>
           <img id="pred3img" src="img/wind.svg" alt="wind" />
           <h4>
@@ -34,8 +34,8 @@ export default function Prediction() {
           </h4>
         </div>
       </div>
-      <div class="col">
-        <div class="card">
+      <div className="col">
+        <div className="card">
           <h4 id="pred4day">Wednesday</h4>
           <img id="pred4img" src="img/thunderstorm.svg" alt="sun" />
           <h4>
@@ -44,8 +44,8 @@ export default function Prediction() {
           </h4>
         </div>
       </div>
-      <div class="col">
-        <div class="card">
+      <div className="col">
+        <div className="card">
           <h4 id="pred5day">Thursday</h4>
           <img id="pred5img" src="img/partly-cloudy.svg" alt="sun" />
           <h4>

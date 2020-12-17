@@ -2,14 +2,15 @@
   margin-right: 15px;
 }
 
-.btn:hover {
+.tempbtns .btn:hover {
   background: #369acd;
   color: white;
 }
-.btn {
+
+.tempbtns .btn {
   border: 2px solid #369acd;
 }
 
-.disabled {
+.tempbtns .disabled {
   background: #369acd !important;
 }

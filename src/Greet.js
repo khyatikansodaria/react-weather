@@ -1,7 +1,8 @@
 import React from "react";
 import "./Greet.css";
 
-export default function Greet() {
+export default function Greet(props) {
+  console.log(props.date);
   return (
     <div className="Greet">
       <h4 class="greet text-center">Good Morning</h4>
