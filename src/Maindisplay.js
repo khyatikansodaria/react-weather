@@ -4,6 +4,7 @@ import axios from "axios";
 import Loader from "react-loader-spinner";
 import Greet from "./Greet";
 import Tempbtn from "./Tempbtn";
+import WeatherIcon from "./WeatherIcon";
 
 export default function Maindisplay(props) {
   const [weather, setWeather] = useState({ready: false});
@@ -15,7 +16,7 @@ export default function Maindisplay(props) {
       ready:true,
       city:response.data.name,
       country:response.data.sys.country,
-      iconUrl:`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon:response.data.weather[0].icon,
       date: new Date(response.data.dt * 1000),
       temp:response.data.main.temp,
       description:response.data.weather[0].description,
@@ -70,7 +71,9 @@ export default function Maindisplay(props) {
         <h2 className="cityName">
           <span id="city">{weather.city}</span>,<span id="country">{weather.country}</span>
         </h2>
-        <img id="wtypeicon" src={weather.iconUrl} alt="sun" />
+        <div classsName="float-left">
+        <WeatherIcon code={weather.icon} />
+        </div>
         <h3 id="tempCF">
           {" "}
           <span id="current-temp">{Math.round(weather.temp)}</span>
