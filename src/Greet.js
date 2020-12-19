@@ -45,8 +45,8 @@ let timePeriod = "AM";
   }
   return (
     <div className="Greet">
-      <h4 class="greet text-center">Good Morning</h4>
-      <h4 class="text-center" id="date-time">
+      <h4 className="greet text-center">Good Morning</h4>
+      <h4 className="text-center" id="date-time">
         {day}, {month} {currentDate}, {year}
          <br />
          {hours}:{minutes} {timePeriod} Pacific Time (PT)
