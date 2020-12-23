@@ -1,6 +1,6 @@
-.forecast img {
+.forecast canvas {
   margin: 0 auto;
-  max-width: 40%;
+  /* max-width: 40%; */
 }
 
 .forecast .col {

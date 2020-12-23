@@ -5,7 +5,7 @@ import Loader from "react-loader-spinner";
 import Greet from "./Greet";
 import Tempbtn from "./Tempbtn";
 import WeatherIcon from "./WeatherIcon";
-// import Prediction from "./Prediction";
+import Prediction from "./Prediction";
 
 export default function Maindisplay(props) {
   const [weather, setWeather] = useState({ready: false});
@@ -109,6 +109,7 @@ export default function Maindisplay(props) {
         </h5>
       </div>
     </div>
+    <Prediction currentCity={weather.city} />
   </div>
   );
   }else{
@@ -121,5 +122,4 @@ export default function Maindisplay(props) {
       width={80} />
     );
   }
-  
 }
