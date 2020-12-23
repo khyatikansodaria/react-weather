@@ -1,7 +1,8 @@
 import React from "react";
 import "./Prediction.css";
 
-export default function Prediction() {
+export default function Prediction(props) {
+  console.log(props.currentCity);
   return (
     <div className="row row-cols-2 row-cols-sm-2 row-cols-md-5 text-center forecast mt-5">
       <div className="col">

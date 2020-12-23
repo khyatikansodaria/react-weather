@@ -5,10 +5,12 @@ import Loader from "react-loader-spinner";
 import Greet from "./Greet";
 import Tempbtn from "./Tempbtn";
 import WeatherIcon from "./WeatherIcon";
+// import Prediction from "./Prediction";
 
 export default function Maindisplay(props) {
   const [weather, setWeather] = useState({ready: false});
   const [city,setCity] = useState(props.defaultCity);
+  const [unit, setUnit] = useState("celsius")
 
   function showTemp(response) {
     console.log(response);
@@ -63,7 +65,7 @@ export default function Maindisplay(props) {
               </button>
             </form>
           </div>
-        <Tempbtn />
+        <Tempbtn setUnit={setUnit} />
       </div>
       <Greet date={weather.date} />
       <div className="row text-center align-items-center">
@@ -76,8 +78,9 @@ export default function Maindisplay(props) {
         </div>
         <h3 id="tempCF">
           {" "}
-          <span id="current-temp">{Math.round(weather.temp)}</span>
-          <span>°C</span>
+          {unit === "celsius" ? <span id="current-temp">{Math.round(weather.temp)}°C</span> : 
+          <span id="current-temp">{Math.round(weather.temp * 9 / 5 + 32)}°F</span>}
+          {/* <span>°C</span> */}
         </h3>
         <h5 id="wtype"> {weather.description} </h5>
       </div>
@@ -106,8 +109,8 @@ export default function Maindisplay(props) {
         </h5>
       </div>
     </div>
-    </div>
-    );
+  </div>
+  );
   }else{
     search();
     return (
@@ -118,4 +121,5 @@ export default function Maindisplay(props) {
       width={80} />
     );
   }
+  
 }
