@@ -19,7 +19,7 @@ export default function Maindisplay(props) {
       city:response.data.name,
       country:response.data.sys.country,
       icon:response.data.weather[0].icon,
-      date: new Date(response.data.dt * 1000),
+      date: response.data.timezone,
       temp:response.data.main.temp,
       description:response.data.weather[0].description,
       feelsLike:response.data.main.feels_like,
@@ -27,6 +27,7 @@ export default function Maindisplay(props) {
       wind:response.data.wind.speed,
     });
   }
+  console.log(city);
 
   function search() {
     const apiKey = "82dadf9031c6bca3436ed3908ea2b7b5";
@@ -67,7 +68,7 @@ export default function Maindisplay(props) {
           </div>
         <Tempbtn setUnit={setUnit} />
       </div>
-      <Greet date={weather.date} />
+      <Greet date= {weather.date} city={weather.city} />
       <div className="row text-center align-items-center">
       <div className="col-12 col-md-3 maincity">
         <h2 className="cityName">

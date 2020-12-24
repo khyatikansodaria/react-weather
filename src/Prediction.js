@@ -6,7 +6,15 @@ import "./Prediction.css";
 export default function Prediction(props) {
   const [loaded, setLoaded] = useState(false);
   const [forecast, setForecast] = useState(null);
-
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tueday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ];
   //console.log(props.currentCity);
 
   function handleForecast(response) {
@@ -21,50 +29,50 @@ export default function Prediction(props) {
     <div className="row row-cols-2 row-cols-sm-2 row-cols-md-5 text-center forecast mt-5">
       <div className="col">
         <div className="card">
-          <h4 id="pred1day">{new Date(forecast.list[0].dt * 1000).getHours()}:00</h4>
-          <WeatherIcon code={forecast.list[0].weather[0].icon} />
+          <h4 id="pred1day">{days[new Date(forecast.list[7].dt * 1000).getDay()]}</h4>
+          <WeatherIcon code={forecast.list[7].weather[0].icon} />
           <h4>
-            <span id="pred1temp">{Math.round(forecast.list[0].main.temp)}</span>
+            <span id="pred1temp">{Math.round(forecast.list[7].main.temp)}</span>
             <span>°C</span>
           </h4>
         </div>
       </div>
       <div className="col">
         <div className="card">
-          <h4 id="pred2day">{new Date(forecast.list[1].dt * 1000).getHours()}:00</h4>
-          <WeatherIcon code={forecast.list[1].weather[0].icon} />
+          <h4 id="pred2day">{days[new Date(forecast.list[15].dt * 1000).getDay()]}</h4>
+          <WeatherIcon code={forecast.list[15].weather[0].icon} />
           <h4>
-            <span id="pred2temp">{Math.round(forecast.list[1].main.temp)}</span>
+            <span id="pred2temp">{Math.round(forecast.list[15].main.temp)}</span>
             <span>°C</span>
           </h4>
         </div>
       </div>
       <div className="col">
         <div className="card">
-          <h4 id="pred3day">{new Date(forecast.list[2].dt * 1000).getHours()}:00</h4>
-          <WeatherIcon code={forecast.list[2].weather[0].icon} />
+          <h4 id="pred3day">{days[new Date(forecast.list[23].dt * 1000).getDay()]}</h4>
+          <WeatherIcon code={forecast.list[23].weather[0].icon} />
           <h4>
-            <span id="pred3temp">{Math.round(forecast.list[2].main.temp)}</span>
+            <span id="pred3temp">{Math.round(forecast.list[23].main.temp)}</span>
             <span>°C</span>
           </h4>
         </div>
       </div>
       <div className="col">
         <div className="card">
-          <h4 id="pred4day">{new Date(forecast.list[3].dt * 1000).getHours()}:00</h4>
-          <WeatherIcon code={forecast.list[3].weather[0].icon} />
+          <h4 id="pred4day">{days[new Date(forecast.list[31].dt * 1000).getDay()]}</h4>
+          <WeatherIcon code={forecast.list[31].weather[0].icon} />
           <h4>
-            <span id="pred4temp">{Math.round(forecast.list[3].main.temp)}</span>
+            <span id="pred4temp">{Math.round(forecast.list[31].main.temp)}</span>
             <span>°C</span>
           </h4>
         </div>
       </div>
       <div className="col">
         <div className="card">
-          <h4 id="pred5day">{new Date(forecast.list[4].dt * 1000).getHours()}:00</h4>
-          <WeatherIcon code={forecast.list[4].weather[0].icon} />
+          <h4 id="pred5day">{days[new Date(forecast.list[39].dt * 1000).getDay()]}</h4>
+          <WeatherIcon code={forecast.list[39].weather[0].icon} />
           <h4>
-            <span id="pred5temp">{Math.round(forecast.list[4].main.temp)}</span>
+            <span id="pred5temp">{Math.round(forecast.list[39].main.temp)}</span>
             <span>°C</span>
           </h4>
         </div>
