@@ -3,14 +3,14 @@
 }
 
 .tempbtns .btn:hover {
-  background: #369acd;
+  background: #a3d8f4;
   color: white;
 }
 
 .tempbtns .btn {
-  border: 2px solid #369acd;
+  border: 2px solid #a3d8f4;
 }
 
 .tempbtns .disabled {
-  background: #369acd !important;
+  background: #a3d8f4 !important;
 }

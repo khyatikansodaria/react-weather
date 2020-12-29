@@ -1,6 +1,6 @@
 .maincontainer {
-  background: #1ec4dc;
-  border: 2.5px solid #369acd;
+  background: #bce6eb;
+  border: 2.5px solid #aee6e6;
   border-radius: 15px;
   margin-top: 20px;
   padding: 15px;
@@ -19,10 +19,10 @@
 }
 
 .App .btn {
-  border: 2px solid #369acd;
+  border: 2px solid #a3d8f4;
 }
 
 .App .btn:hover {
-  background: #369acd;
+  background: #a3d8f4;
   color: white;
 }
